@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">  
+
+     .sibling-element { 
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+     .parent-element {
+        position: relative;
+        height: 200px;
+        padding:   10px;
+        background-color: #81adc8;
+
+    }
+    .main-element {
+        /*position: static;*/ /*all element are static position(no special effect) and will be affect by other style by default.*/
+        /*position: relative;*/ /*absolute space/element is remove*/
+        /*position: absolute;*/ /*absolute position: two scenario look at parent element if no position it will look up and vice versa. if parent element have position, the point of movement start inside the element box*/
+        position: fixed; /*fixed:move to bottom dispite the parent has position/ they will not be looking at the parent element. will always remain at 0,0 bottom even if you scroll down*/
+        right: 0px;
+        bottom: 0px;
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+ <div class="parent-element">
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+</div>
+</body>
+</html>

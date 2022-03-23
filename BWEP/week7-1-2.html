@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week7 p2</title>
+</head>
+<!-- week6-3 -->
+<!-- flex-direction: column; row row-reverse -->
+<!-- flex-direction: row-reverse;
+flex-wrap: no wrap;
+align-item: center; -->
+
+<!-- align-content
+align-self -->
+<style type="text/css">
+
+	div{display: flex; border: 1px solid;
+		width: 900px; height: 400px;
+		justify-content: space-around;
+		align-items: center;
+		/*flex-direction: row-reverse;*/ /*will make from row 4 to 1 instead of 1 to 4*/
+		/*width: 500px;height: 600px;*/
+		/*flex-wrap: wrap;*/ /*will wrap the object into multiple lines*/
+		/*align-content: center;*/ /*only applied when there is flex wrap declare*/
+	}
+
+	p{
+		width: 200px; height: 100px;
+		background-color: cyan;
+		border: 1px solid;
+		box-sizing: border-box;
+	}
+
+	p:nth-child(odd){align-self: flex-end;} /*for individual flex item*/
+
+</style>
+<body>
+<div>
+	<p>1</p><p>2</p><p>3</p><p>4</p>
+</div>
+</body>
+</html>
