@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week14</title>
+</head>
+<!-- <body id="page"> -->
+<body>
+<!-- <input type="text" id="color" onkeyup="change1()"> -->
+<input type="text" onkeyup="change2(this.value)"><!-- red -->
+<button onclick="change()">change color</button>
+
+<script type="text/javascript">
+function change(){
+ 		var a = document.getElementById("page");
+ 		var b = document.getElementById("color");
+ 		a.style.backgroundColor=color.value;
+}
+
+function change1(){
+ 		var a = document.getElementById("page");
+ 		document.body.style.backgroundColor=color.value;
+}
+
+function change2(color){ //color="red"
+ 		document.body.style.backgroundColor=color;
+}
+ 		</script>
+
+</body>
+</html>

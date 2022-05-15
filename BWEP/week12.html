@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week12</title>
+</head>
+<body>
+	<script type="text/javascript">
+	// var math = prompt("Do you have credit Mathematics? ")
+	// var eng = prompt("Do you have credit English Language? ")
+	// var malay = prompt("Do you have credit Malay Language? ")
+	// var ic = prompt("Are you yellow IC holder? ")
+	// var ms = prompt("Do you have credit in 3 English medium subjects? ")
+
+
+	// if(math == "y" && eng == "y" && malay == "y" &&  ic == "y" &&  ms == "y"){
+	// 	document.write("Congratulation! You are eligible to apply and receive full scholarship")
+	// }
+	// else if((math == "y" && eng == "y" &&  malay == "y" &&  ic == "n" && ms == "y")||
+	// else if(math == "y" && eng == "y" &&  malay == "y" &&  ic == "n" && ms == "y"){
+	
+	// else if(math == "y"){
+	// 	document.write("You are eligible to apply as fee faying students")}
+	// else if(math == "y"){
+	// 	document.write("You are eligible to apply as fee faying students")}
+	// else if(math == "y"){
+	// 	document.write("You are eligible to apply as fee faying students")}
+	// else if(math == "y"){
+	// 	document.write("Sorry, you are not eligible to apply")}
+	// else 
+	// 	document.write("Sorry, please re-enter")}
+
+	//var num1 = prompt("Enter a number between 1 - 5 and I will spell them in words: ")
+
+	// if(num1 == "1"){
+	// 	document.write("You have entered ONE")
+	//  }
+	//  if(num1 == "2"){
+	// 	document.write("You have entered TWO")
+	//  }
+	//  if(num1 == "3"){
+	// 	document.write("You have entered THREE")
+	//  }
+	// if(num1 == "4"){
+	// 	document.write("You have entered FOUR")
+	//  }
+	//  if(num1 == "5"){
+	// 	document.write("You have entered FIVE")
+	//  }
+	// else{
+	// 	document.write("I am yet to learn that!")
+	//  }
+
+	// switch(num1){
+		// case "1":
+		// document.write("You have entered ONE");break;
+		// case "2":
+		// document.write("You have entered TWO");break;
+		// case "3":
+		// document.write("You have entered THREE");break;
+		// case "4":
+		// document.write("You have entered FOUR");break;
+		// case "5":
+		// document.write("You have entered FIVE");break;
+		// default:
+		// document.write("I am yet to learn that!");break;
+	//}
+
+	//var alpha = prompt("Enter a character between a-z lowercase. I will tell you if it is vowel or consonant: ");
+
+	// switch(alpha){
+	// 	case "a":
+	// 	case "e":
+	// 	case "i":
+	// 	case "o":
+	// 	case "u":
+	// 	document.write("it is vowel");
+	// 	break;
+	// 	default:
+	// 	document.write("it is consonant");
+	// 	break;
+	// }
+
+	// var weather = "sunny";
+	//var weather=true;
+	// if(weather=="sunny"){alert("outdoor")}
+	// else{alert("indoor")}
+
+	// weather?alert("outdoor"):alert("indoor");
+
+	// var date = new Date();
+	// var year = date.getFullYear();
+
+	// var yearofbirth = Number(prompt("Your year of birth?"))
+
+	// answer = year- yearofbirth;
+
+	// if (answer > 0 && answer < 18)
+	// alert("You are underage")
+	// else if (answer > 19 && answer < 60)
+	// alert ("Enjoy life")
+	// else
+	// alert("Warga Emas")
+
+	// else
+	// 	alert("You are adult")
+
+	// new Date().getFullYear()-yearofbirth<18?alert("underage"):alert("adult")
+
+	// answer<18?alert("underage"):answer>=60?alert("warga emas"):alert("enjoy life")
+
+	//numberSpeller();
+
+	var ask = prompt("Which function? [1]numberSpeller [2]Vowel and consonant [3]Year of Birth ")
+	switch (ask){
+		case "1":numberSpeller();break;
+		case "2":alpha();break;
+		case "3":age();break;
+		default:
+		document.write("Invalid");break;
+	}
+	function numberSpeller(){
+		var num1 = prompt("Enter a number between 1 - 5 and I will spell them in words: ")
+			switch(num1){
+		case "1":
+		document.write("You have entered ONE");break;
+		case "2":
+		document.write("You have entered TWO");break;
+		case "3":
+		document.write("You have entered THREE");break;
+		case "4":
+		document.write("You have entered FOUR");break;
+		case "5":
+		document.write("You have entered FIVE");break;
+		default:
+		document.write("I am yet to learn that!");break;
+		}
+	}
+
+	function alpha(){
+	var alpha = prompt("Enter a character between a-z lowercase. I will tell you if it is vowel or consonant: ");
+
+	switch(alpha){
+		case "a":
+		case "e":
+		case "i":
+		case "o":
+		case "u":
+		document.write("it is vowel");
+		break;
+		default:
+		document.write("it is consonant");
+		break;
+		}
+	}
+
+	function age(){
+	var date = new Date();
+	var year = date.getFullYear();
+
+	var yearofbirth = Number(prompt("Your year of birth?"))
+
+	answer = year- yearofbirth;
+	answer<18?alert("underage"):answer>=60?alert("warga emas"):alert("enjoy life")
+	}
+</script>
+</body>
+</html>

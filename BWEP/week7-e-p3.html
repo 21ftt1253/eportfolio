@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week7-e-p3</title>
+
+	<style type="text/css">
+
+		#id1 {
+			width: 600px;
+			margin: 0px auto;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			}
+
+		.c1 {
+			width: 70%;
+			padding: 10px 10px;
+			box-sizing:c1rder-box;
+			text-align: center;
+		}
+
+		.c2 {
+			width: 100%;
+			padding: 10px 0px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="id1">
+
+			<div class="c1"><label>Fullname</label></div>
+			<div><input type="text" name="txtFullName" maxlength="30" pattern="[A-z]{30}"></div>
+		
+			<div class="c1"><label>Email</label></div>
+			<div><input type="Email" name="txtEmail"></div>
+		
+			<div class="c1"><label>Date you can start</label></div>
+			<div><input type="date" name="dateStart"></div>
+		
+			<div class="c1"><label>Morning shift preference</label></div>
+			<div><input type="time" name="timeAM"></div>
+		
+			<div class="c1"><label>Evening shift perference</label></div>
+			<div><input type="time" name="timePM"></div>
+
+			<div class="c1"><label>How many hours you can work? In multiple of 3</label></div>
+			<div><input type="number" name="numHour" value=" " step="3" min="3" max="9"></div>
+
+			<div class="c1"><label>Distance you willing to commute to volunteer center?</label></div>
+			<div>
+				<label>1</label>
+				<input type="range" name="rangeDistance" value="3" min="1" max="15">
+				<label>15</label>
+			</div>
+
+			<div class="c1"><label>You currency perference for payment?</label></div>
+
+			<div>
+				<input type="radio" name="radCurrency" id="pound">
+				<label>&pound;</label>
+
+				<input type="radio" name="radCurrency" id="yen">
+				<label>&yen;</label>
+
+				<input type="radio" name="radCurrency" id="euro">
+				<label>&euro;</label>
+			</div>
+
+		<div class="c2">
+			<textarea name="txtA_Address" rows="6" cols="40" placeholder="Type your home address"></textarea>
+		</div>
+
+		<div class="c2">
+			<del>You will be given daily meals</del>
+		</div>
+		
+		<div class="c2">
+			<label for="checkTerms"><input type="checkbox" name="checkTerms" disabled="1" checked="1" id="checkTerms"> I agree to all terms and conditions</label>
+		</div>
+
+		<div class="c2">
+			<label for="checkRobot">Prove you are not robot: 10 &#60; 20? 
+			<input type="checkbox" name="checkRobot" id="checkRobot"></label>
+		</div>
+		
+		<div class="c2">
+			<input type="submit" name="btnSubmit" value="Volunteer now!">
+		</div>
+
+		<div class="c2">	
+			<input type="reset" name="btnReset" value="Start Over">
+		</div>
+
+		<div class="c2">
+			<label>For more informaton, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" target="_blank">website</a></label>
+		</div>
+
+	</form>
+
+	</div>
+
+</body>
+</html>

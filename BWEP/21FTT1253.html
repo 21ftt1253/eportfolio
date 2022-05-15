@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 1</title>
+</head>
+<body>
+<script type="text/javascript">
+var name = prompt("Enter name: ");
+	var time =prompt("Enter time in 24hr (whole number only): ");
+	var firstNum = Number(prompt("Enter first number: "));
+	var secondNum = Number(prompt("Enter second number: "));
+	var choices = Number(prompt("Enter choice. 1 add, 2 multiply: "));
+
+	var choices2, enjoy = "" , result = "";
+	var clock="";
+	var numOne, numTwo = "";
+	var firstPick, secondPick = "";
+
+	if (time >= 0 && time<=12){
+		clock = "Good Morning " + name 
+	} else if (time >= 13&& time<=24){
+		clock = "Good Day " + name 
+	}else{
+		clockInvalid = "Sorry " + name + ". I need a valid time."
+	}
+
+	if (choices == "1"){
+		numOne = firstNum + secondNum
+	} else if(choices == "2"){
+		numTwo = firstNum * secondNum
+	}
+
+	if(choices == "1"){
+		choices2 = "add"
+	} else if (choices == "2"){
+		choices2 = "multiply"
+	}
+
+	if(choices == 1){
+		result = firstNum + secondNum
+	}else if(choices == 2){
+		result = firstNum * secondNum
+	}
+
+
+		document.write("Enter name: " + clock);
+		document.write("<br>");
+		document.write("Enter first number: " + firstNum);
+		document.write("<br>");
+		document.write("Enter second number: " + secondNum);
+		document.write("<br>");
+		document.write("You decided to " + choices2);
+		document.write("<br>");
+		document.write("The answer is " + result);
+		document.write("<br>");
+		if (time >= 0 && time<=12){
+		 document.write("enjoy your morning")
+	} else if (time >= 13&& time<=24){
+		 document.write("enjoy your day")
+	}else{
+		document.write("Sorry " + name + ". I need a valid time.")
+	}
+		
+	
+
+
+
+// var name = (prompt("Enter name: "));
+// var time = (prompt("Enter time in 24hr (whole number only): "));
+// var fnum = (prompt("Enter first number: "));
+// var snum = (prompt("Enter second number: "));
+// var choice =(prompt("Enter choice: 1 add, 2 multiply: "));
+
+// if(time>=0 && time<=6){console.log("Too early to go out")}
+// else if(time>=0 && time<=6){}
+// else if(time>=6 && time<=17){}
+// else if(time>=16 && time<=22){}
+// else if(time>=21 && time<=25){}
+// else ()
+
+// var text="", closing="";
+// if(time<-12 ){
+// 	// text+="Good Morning"+ name;
+// text= text
+// }
+
+</script>
+</body>
+</html>

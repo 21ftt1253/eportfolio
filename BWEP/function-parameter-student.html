@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<link href="https://fonts.googleapis.com/css?family=Oregano|Zilla+Slab|Permanent+Marker|Acme" rel="stylesheet">
+<style>
+	#text{width: 50%;height: 30vh;border: 1px solid}
+</style>
+</head>
+<body>
+<div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<!-- <button onclick="oregano()">Oregano</button>
+<button onclick="zillaSlab()">Zilla Slab</button>
+<button onclick="permanentMarker()">Permanent Marker</button>
+<button onclick="acme()">Acme</button> -->
+
+<button onclick="fontChanger(1)">Oregano</button>
+<button onclick="fontChanger(2)">Zilla Slab</button>
+<button onclick="fontChanger(3)">Permanent Marker</button>
+<button onclick="fontChanger(4)">Acme</button>
+
+<span onclick="fontResize(1)" style="font-size:1em;">A</span>
+<span onclick="fontResize(2)" style="font-size:1.5em;">A</span>
+<span onclick="fontResize(3)" style="font-size:2em;">A</span>
+<span onclick="fontResize(4)" style="font-size:2.5em;">A</span>
+<span onclick="fontResize(5)" style="font-size:3em;">A</span>
+<script>
+var number=0;
+function fontResize(choice){//choice==1
+	var txt = document.getElementById("text");
+	nama ="RZ"; //without var its global variable if with var it for one function only
+	var num1 =100;
+	{
+		let x=10;
+		alert("x="+x); //live within here if with curly bracket //if no block it will go overall function
+	}
+
+	alert("x outside {} "+x);
+
+	switch(choice){
+		case 1 :
+		txt.style.fontSize="1em";
+		break;
+		case 2 :
+		txt.style.fontSize="1.5em";
+		break;
+		case 3 :
+		txt.style.fontSize="2em";
+		break;
+		case 4 :
+		txt.style.fontSize="2.5em";
+		break;
+		case 5 :
+		txt.style.fontSize="3em";
+		break;
+	}
+	alert(number);
+number++;
+alert("num: "+num1);
+}
+
+function fontChanger(choice){//choice==1
+	var txt = document.getElementById("text");
+	alert("nama in FontResize "+nama)
+	switch(choice){
+		case 1 :
+		txt.style.fontFamily="Oregano";
+		break;
+		case 2 :
+		txt.style.fontFamily="Zilla Slab";
+		break;
+		case 3 :
+		txt.style.fontFamily="Permanent Marker";
+		break;
+		case 4 :
+		txt.style.fontFamily="Acme";
+		break;
+	}
+	alert(number);
+	number++;
+	alert("num: "+num1);
+}
+
+// function oregano(){
+// 		var txt = document.getElementById("text");
+// 		txt.style.fontFamily="Oregano";
+// }
+
+// function zillaSlab(){
+// 		var txt = document.getElementById("text");
+// 		txt.style.fontFamily="Zilla Slab";
+// }
+// function permanentMarker(){
+// 		var txt = document.getElementById("text");
+// 		txt.style.fontFamily="Permanent Marker";
+// }
+// function acme(){
+// 		var txt = document.getElementById("text");
+// 		txt.style.fontFamily="Acme";
+// }
+
+</script>	
+</body>
+</html>
+
